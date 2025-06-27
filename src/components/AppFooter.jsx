@@ -1,9 +1,11 @@
 const AppFooter = () => {
     return (
-        <footer>
-            <p>
-               Created by Gabriele Ardizzone
-            </p>
+        <footer className="bg-secondary-subtle py-1">
+            <div className="container">
+                <p>
+                    Created by Gabriele Ardizzone
+                </p>
+            </div>
         </footer>
     )
 }
