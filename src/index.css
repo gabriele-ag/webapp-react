@@ -28,6 +28,7 @@ img {
   list-style-type: none;
 } */
 
-header {
-  height: 50px;
+.hero-img {
+  object-fit: fill;
+  max-width: 100%;
 }
