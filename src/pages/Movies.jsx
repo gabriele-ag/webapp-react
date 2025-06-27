@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext} from "react"
 import axios from "axios"
 import MovieCard from "../components/MovieCard"
 import { MovieContextProvider } from "../contexts/MovieContext"

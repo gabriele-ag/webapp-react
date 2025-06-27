@@ -1,9 +1,9 @@
 import { createContext, useState, useEffect} from "react";
 import axios from "axios";
 
-export const MovieContextProvider = createContext()
+const MovieContextProvider = createContext()
 
-export const MovieContent = ({children}) => {
+const MovieContent = ({children}) => {
 
     const [movies, setMovies] = useState([])
 
@@ -22,6 +22,8 @@ export const MovieContent = ({children}) => {
         }}>{children}</MovieContextProvider.Provider>
     )
 }
+
+export { MovieContextProvider, MovieContent }
 
 
 
