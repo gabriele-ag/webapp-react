@@ -17,9 +17,9 @@ const AppHeader = () => {
             <header>
                 <nav>
                     <div>
-                        <ul className="flex">
+                        <ul className="">
                         {movieLinks.map((curLink, index) => (
-                            <li className="nav-link" key={index}>
+                            <li className="" key={index}>
                                 <NavLink to={curLink.url}>
                                     {curLink.title}
                                 </NavLink>

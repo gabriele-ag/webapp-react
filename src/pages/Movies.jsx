@@ -7,7 +7,7 @@ const Movie = () => {
 
 
     useEffect(() => {
-        axios.get("http://localhost:3000/movies").then((resp) => {
+        axios.get(`${import.meta.env.VITE_API_URL}/movies`).then((resp) => {
             console.log(resp.data)
             const movie = resp.data.data
             setMovies(movie)
@@ -23,6 +23,7 @@ const Movie = () => {
                     {movies.map((curMovie) => (
                         <div key={curMovie.id}>
                             <h2>{curMovie.title}</h2>
+                            <img src={curMovie.image}></img>
                             <p>{curMovie.abstract}</p>
                         </div>
                     ))}
