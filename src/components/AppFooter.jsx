@@ -2,7 +2,7 @@ const AppFooter = () => {
     return (
         <footer>
             <p>
-                Sono Footer
+               Created by Gabriele Ardizzone
             </p>
         </footer>
     )

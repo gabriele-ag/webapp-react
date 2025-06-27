@@ -2,10 +2,12 @@ const Home = () => {
 
      return (
         <main>
-            <div>
-            <img src="../../public/img/heroimage.jpg" class="hero-img" alt="hero-img"></img>
-            <h1>Benvenut* su Movie Collection Catalog</h1>
-            </div>
+                <div className="hero-section">
+                    <div className="container">
+                        <h1 className="text-center text-light">Benvenut* su Movie Collection Catalog</h1>
+                        <p className="text-center text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
         </main>
     )
 }

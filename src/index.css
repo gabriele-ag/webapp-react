@@ -28,7 +28,12 @@ img {
   list-style-type: none;
 } */
 
-.hero-img {
+.hero-section {
   object-fit: fill;
   max-width: 100%;
+  background-image: url(../public/img/heroimage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
