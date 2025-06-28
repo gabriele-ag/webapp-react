@@ -15,8 +15,6 @@ const ShowMovie = () => {
      }, [id])
 
 
-
-
      return (
         <section>
             <Link to="/movies">Torna alla pagina precedente</Link>

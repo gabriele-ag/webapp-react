@@ -10,6 +10,14 @@ const AppHeader = () => {
             title: "Movies",
             url: "/movies",
         },
+        {
+            title: "About Us",
+            url: "/about-us",
+        },
+        {
+            title: "Contacts",
+            url: "/contacts",
+        },
     ];
 
     return (
@@ -17,17 +25,22 @@ const AppHeader = () => {
             <header>
                 <nav className="navbar navbar-expand-lg bg-primary">
                     <div className="container-fluid">
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav">
-                            {movieLinks.map((curLink, index) => (
-                                <li className="nav-item" key={index}>
-                                    <NavLink className="nav-link text-light" aria-current="page" to={curLink.url} href="#">
-                                        {curLink.title}
-                                    </NavLink>
-                                </li>
-                            ))}
+                        <div className="collapse navbar-collapse d-flex justify-content-around p-1" id="navbarNav">
+                            <div>
+                                <h1 className="logo-ciak">CIAK</h1>
+                            </div>
+                            <div>
+                                <ul className="navbar-nav">
+                                {movieLinks.map((curLink, index) => (
+                                    <li className="nav-item" key={index}>
+                                        <NavLink className="nav-link text-light" aria-current="page" to={curLink.url} href="#">
+                                            {curLink.title}
+                                        </NavLink>
+                                    </li>
+                                ))}
+                                </ul>
+                            </div>
 
-                            </ul>
                         </div>
                     </div>
                 </nav>

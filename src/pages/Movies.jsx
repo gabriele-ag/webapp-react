@@ -22,7 +22,7 @@ const Movie = () => {
     return (
         <>
             <section>
-                <h1>Catalogo dei Film</h1>
+                <h1 className="text-center">Catalogo dei Film</h1>
                     <div className="container py-5">
                         <div className="row g-1 justify-content-between" >
                             {movies.map((curMovie) => (

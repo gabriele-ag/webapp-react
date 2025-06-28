@@ -15,6 +15,14 @@ img {
 
 /* Common */
 
+.font-size-big {
+  font-size: 60px;
+}
+
+.font-size-medium {
+  font-size: 30px;
+}
+
 /* .container {
   padding: 0;
   margin: auto;
@@ -29,16 +37,18 @@ img {
 } */
 
  .hero-section {
-  object-fit: fill;
+  /* object-fit: fill; */
   max-width: 100%;
-  background-image: url(../public/img/1080p.jpg);
+  /* background-image: url(../public/img/1080p.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   padding-top: 300px;
   padding-bottom: 300px;
-} 
+}
 
-.img-hero {
-  max-width: 70%;
-  border-radius: 30px;
+.logo-ciak {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
 }

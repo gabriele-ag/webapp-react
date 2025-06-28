@@ -11,8 +11,8 @@ const Home = () => {
                 <div className="hero-section bg-primary">
                     <div className="container">
                             <div >
-                                <h1 className="text-center text-light">Benvenut* su Movie Collection Catalog</h1>
-                                <p className="text-center text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                <h1 className="font-size-big text-center text-light">Benvenut* su CIAK</h1>
+                                <p className="font-size-medium text-center text-light">Il catalogo online sui film</p>
                             </div> 
                     </div>
                 </div>
@@ -25,6 +25,7 @@ const Home = () => {
                             movie={curMovie}
                             />
                         ))} 
+                        <button></button>
                         </div>
                 </div>
         </main>
