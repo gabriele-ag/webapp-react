@@ -28,7 +28,7 @@ img {
   list-style-type: none;
 } */
 
-.hero-section {
+ .hero-section {
   object-fit: fill;
   max-width: 100%;
   background-image: url(../public/img/1080p.jpg);
@@ -36,4 +36,9 @@ img {
   background-position: center;
   padding-top: 300px;
   padding-bottom: 300px;
+} 
+
+.img-hero {
+  max-width: 70%;
+  border-radius: 30px;
 }

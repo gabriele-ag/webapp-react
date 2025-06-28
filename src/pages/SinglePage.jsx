@@ -1,24 +1,32 @@
-import { useEffect } from "react"
-import { useParams } from "react-router-dom"
+import {useParams, Link} from "react-router-dom"
+import {useEffect, useState} from "react"
 import axios from "axios"
 
-const SingleMovie = () => {
+const ShowMovie = () => {
     const {id} = useParams()
 
-    const [movie, setMovie] = useState(null)
+    const [showMovie, setShowMovie] = useState([])
+
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/movies/${id}`).then((resp) => {
-            setMovie(resp.data)
+        axios.get(`${import.meta.env.VITE_API_URL}/movies/${id}`).then((resp) => {
+                setShowMovie(resp.data.data)
         })
-    },[])
+     }, [id])
 
 
-    return (
-        <main>
-            <h1>Dettagli di un film{id}</h1>
-        </main>
-    )
+
+
+     return (
+        <section>
+            <Link to="/movies">Torna alla pagina precedente</Link>
+            <div className="container">
+                <img src={showMovie.image} alt="show-image"></img>
+                <p>{showMovie.abstract}</p>
+            </div>
+        </section>
+     )
+
 }
 
-export default SingleMovie
+export default ShowMovie

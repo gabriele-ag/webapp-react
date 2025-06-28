@@ -8,10 +8,12 @@ const Home = () => {
 
      return (
         <main>
-                <div className="hero-section">
+                <div className="hero-section bg-primary">
                     <div className="container">
-                        <h1 className="text-center text-light">Benvenut* su Movie Collection Catalog</h1>
-                        <p className="text-center text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <div >
+                                <h1 className="text-center text-light">Benvenut* su Movie Collection Catalog</h1>
+                                <p className="text-center text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div> 
                     </div>
                 </div>
                 <div className="container py-4">
