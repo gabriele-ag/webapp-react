@@ -1,13 +1,15 @@
 import {useParams, Link, useNavigate} from "react-router-dom"
 import {useEffect, useState} from "react"
 import axios from "axios"
+import ReviewsCard from "../components/reviews/ReviewsCard"
 import ReviewsList from "../components/reviews/ReviewsList"
 
 const ShowMovie = () => {
-    const {slug} = useParams()
+    const { slug } = useParams()
     const navigate = useNavigate()
 
     const [showMovie, setShowMovie] = useState([])
+    const [reviews, setReviews] = useState([])
 
 
     useEffect(() => {
@@ -15,7 +17,8 @@ const ShowMovie = () => {
         .get(`${import.meta.env.VITE_API_URL}/movies/${slug}`)
         .then((resp) => {
             console.log(resp.data.data)
-                setShowMovie(resp.data.data)
+            setShowMovie(resp.data.data)
+            setReviews(resp.data.data.reviews)
         })
         .catch((err) => {
             if(err.status === 404) {
@@ -36,7 +39,7 @@ const ShowMovie = () => {
             <section>
                 <div className="container">
                     <h2>Recensioni</h2>
-                    {/* <ReviewsList reviews={showMovie.reviews}/> */}
+                    <ReviewsList reviews={reviews}/>
                 </div>
             </section>
         </main>

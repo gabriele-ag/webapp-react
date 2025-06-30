@@ -1,8 +1,8 @@
 
 
-const ReviewsCard = ({reviews}) => {
+const ReviewsCard = ({review}) => {
 
-    const {name, vote, text, created_at} = reviews
+    const {name, vote, text, created_at} = review
     return (
         <div className="card">
             <div className="card-header">

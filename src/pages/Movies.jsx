@@ -19,10 +19,11 @@ const Movie = () => {
         getMovie()
     };
 
+
     const getMovie = () => {
         const params = {};
         if (search) {
-            params.search = search
+            params.search = search;
         }
 
         axios
