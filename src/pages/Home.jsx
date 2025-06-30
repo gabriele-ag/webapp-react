@@ -24,8 +24,7 @@ const Home = () => {
                             key={curMovie.id}
                             movie={curMovie}
                             />
-                        ))} 
-                        <button></button>
+                        ))}
                         </div>
                 </div>
         </main>
