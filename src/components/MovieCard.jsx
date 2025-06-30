@@ -10,10 +10,7 @@ const MovieCard = ({movie}) => {
                     <span className="card-text text-center">{director}</span>
                     <p className="card-text text-center">{abstract}</p>
                     <p className="card-text text-center">{year}</p>
-                    <p className="card-text text-center">{namereview}</p>
-                    <p className="card-text text-center">{vote}</p>
-                    <p className="card-text text-center">{textreview}</p>
-                    
+                  
                 </div>
         </div>
     )
