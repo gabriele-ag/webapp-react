@@ -4,7 +4,7 @@ import axios from "axios"
 import ReviewsList from "../components/reviews/ReviewsList"
 
 const ShowMovie = () => {
-    const {id} = useParams()
+    const {slug} = useParams()
     const navigate = useNavigate()
 
     const [showMovie, setShowMovie] = useState([])
@@ -12,7 +12,7 @@ const ShowMovie = () => {
 
     useEffect(() => {
         axios
-        .get(`${import.meta.env.VITE_API_URL}/movies/${id}`)
+        .get(`${import.meta.env.VITE_API_URL}/movies/${slug}`)
         .then((resp) => {
             console.log(resp.data.data)
                 setShowMovie(resp.data.data)
@@ -22,7 +22,7 @@ const ShowMovie = () => {
                 navigate("/not-found")
             }
         })
-     }, [id])
+     }, [])
 
      return (
         <main>
@@ -36,7 +36,7 @@ const ShowMovie = () => {
             <section>
                 <div className="container">
                     <h2>Recensioni</h2>
-                   
+                    {/* <ReviewsList reviews={showMovie.reviews}/> */}
                 </div>
             </section>
         </main>
