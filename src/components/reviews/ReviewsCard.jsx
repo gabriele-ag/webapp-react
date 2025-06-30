@@ -6,7 +6,7 @@ const ReviewsCard = ({review}) => {
     return (
         <div className="card">
             <div className="card-header">
-                {vote}
+                Vote: {vote}
             </div>
             <div className="card-body">
                 <figure>
