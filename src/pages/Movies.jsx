@@ -40,16 +40,17 @@ const Movie = () => {
 
     return (
         <>
-            <section>
+            <section className="py-5">
                 <h1 className="text-center">Catalogo dei Film</h1>
-                <div className="mb-4 d-flex justify-content-center">
+                <div className="my-5 container">
                     <form 
                     action=""
                     onSubmit={handleSubmit}
+                    className="d-flex justify-content-center"
                     >
                         <input 
                         type="search" 
-                        className="form-control" 
+                        className="form-control w-50" 
                         placeholder="Inizia ricerca..." 
                         aria-label="Cerca film per titolo"
                         value={search}

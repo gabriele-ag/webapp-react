@@ -18,6 +18,10 @@ const AppHeader = () => {
             title: "Contacts",
             url: "/contacts",
         },
+        {
+            title: "Crea Film",
+            url: "/movies/create"
+        }
     ];
 
     return (
